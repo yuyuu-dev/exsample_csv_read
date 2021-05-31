@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScriptでCSVファイルを読み込んでテーブルに表示する</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+<body>
+  <section class="section">
+
+    <h1 class="title">JavaScriptでCSVファイルを読み込んでテーブルに表示する</h1>
+
+    <div class="columns">
+      <div class="column">
+        <article class="message is-primary">
+          <div class="message-body">
+            <span id="message">ファイルを選択してください。</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <input id="csv_file" type="file">
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column" style="overflow-y: scroll;">
+        <table id="csv_data_table" class="table is-bordered">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>title</th>
+              <th>url</th>
+              <th>category</th>
+              <th>create_date</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
